@@ -25,16 +25,9 @@
         
         $(".box").click(function(){
           var our_box = $("#"+this.id);
-          var val;
-          if(turn = 1){
-            val = x;
-          } else {
-            val = o;
-          }
+          var val = turn == 1 ? 'X' : 'O';
           our_box.text(val);
-          
           turn = !turn;
-          
         });
         
         
