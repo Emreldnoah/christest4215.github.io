@@ -12,6 +12,9 @@
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
+      var x = 'X';
+      var o = 'O';
+      var turn = x;
       $(document).ready(function(){
         $("#button1").click(function(){
           $("iframe").hide();
@@ -19,9 +22,6 @@
         $("#button2").click(function(){
           $("iframe").show();
         });
-        var x = 'X';
-        var o = 'O';
-        var turn = x;
         
         $(".box").click(function(){
           var our_box = $("#"+this.id);
