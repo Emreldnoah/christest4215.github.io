@@ -25,17 +25,13 @@
         
         $(".box").click(function(){
           var our_box = $("#"+this.id);
-          
-          var val = turn == 1 ? "X": "O";
+          var val;
+          if(turn = 1){
+            val = x;
+          } else {
+            val = o;
+          }
           our_box.text(val);
-          
-          if(turn == x){
-            turn = o;
-          }
-          
-          if(turn == o){
-            turn = x;
-          }
           
           turn = !turn;
           
